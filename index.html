@@ -1,190 +1,24 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INTRO A HTML</title>
+    <title>MENU</title>
+    <link href="
+https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css
+" rel="stylesheet">
 </head>
-<body bgcolor="pink" text="white">
-    <a href="dos.html">IR A DOS</a>
-    <a href="miestilo.html">MI ESTILO</a>
-    <a href="https://www.google.com" target="_blank">GOOGLE</a>
-   <h1>HOLA MUNDO</h1> 
-   <h2>INTRO A HTML</h2>
-   <h3>TEMARIO</h3>
-   <h4>TEMARIO</h4>
-   <h5>TEMARIO</h5>
-   <h6>TEMARIO</h6>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae id adipisci ut cupiditate perspiciatis reprehenderit optio maiores praesentium exercitationem odio! Aliquid iusto quam quibusdam, repellendus exercitationem accusantium! In, molestiae repellat!
-
-   </p>
-   <hr>
-   <marquee behavior="scroll"
-   direction="left">VIVA MEXICO</marquee>
-   <marquee  behavior="scroll"
-   direction="right">VIVA MEXICO</marquee>
-   <ul type="square">
-    <li>LANDY</li>
-    <li>ZOE</li>
-   </ul>
-   <ol type="I">
-    <li>LANDY</li>
-    <li>ZOE</li>
-   </ol>
-   <img src="img/tarjeta.png" alt="" width="100px" height="100px">
-   <table border="1" width="100%" cellspacing="0" cellpadding="10">
-    <tr>
-        <td>LANDY</td>
-        <td>ZOE</td>
-
-    </tr>
-     <tr>
-        <td>LANDY</td>
-        <td>ZOE</td>
-
-    </tr>
-   </table>
-   <video src="img/video.mp4" width="320" height="240" controls></video>
-   <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/GsRlDfK-ESo?si=ihI6zqnt2EHSZSxr"
-    title="Youtube video" frameborder="0" allow="accelerometer;
-    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-
-    picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe>
-   <h1>FORMULARIOS</h1>
-   <form action="procesar.php" method="post">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre"><br><br>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-
-    <input type="button" value="Enviar">
-
-   </form>
-
-   
-    <h1>Formulario HTML5 Completo</h1>
+<body class="bg-dark">
+    <div class="container w-50 m-auto mt-5">
+        <h1 class="text-center text-light">MENU</h1>
+        <a href="01/index.html" class="btn btn-primary d-block m-2 w-100">WEB</a>
+        <a href="02/index.html" class="btn btn-secondary d-block m-2 w-100">EJERCICIO 2</a>
+        
+    </div>
     
-    <form action="/procesar" method="post" enctype="multipart/form-data" novalidate>
-        <!-- Campos de entrada básicos -->
-        <fieldset>
-            <legend>Información Personal</legend>
-            
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="tú@ejemplo.com">
-            
-            <label for="url">Tu sitio web:</label>
-            <input type="url" id="url" name="url" placeholder="https://tusitio.com">
-            
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}">
-            
-            <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad" min="18" max="99">
-            
-            <label for="fecha">Fecha de nacimiento:</label>
-            <input type="date" id="fecha" name="fecha">
-            
-            <label for="hora">Hora preferida:</label>
-            <input type="time" id="hora" name="hora">
-            
-            <label for="color">Color favorito:</label>
-            <input type="color" id="color" name="color">
-            
-            <label for="busqueda">Búsqueda:</label>
-            <input type="search" id="busqueda" name="busqueda">
-            
-            <label for="rango">Nivel de satisfacción:</label>
-            <input type="range" id="rango" name="rango" min="1" max="10">
-        </fieldset>
-        
-        <!-- Selección múltiple -->
-        <fieldset>
-            <legend>Preferencias</legend>
-            
-            <label for="pais">País:</label>
-            <select id="pais" name="pais">
-                <option value="">Selecciona un país</option>
-                <option value="es">España</option>
-                <option value="mx">México</option>
-                <option value="ar">Argentina</option>
-            </select>
-            
-            <label for="idiomas">Idiomas que hablas:</label>
-            <select id="idiomas" name="idiomas" multiple size="3">
-                <option value="es">Español</option>
-                <option value="en">Inglés</option>
-                <option value="fr">Francés</option>
-            </select>
-            
-            <label>Género:</label>
-            <input type="radio" id="hombre" name="genero" value="hombre">
-            <label for="hombre">Hombre</label>
-            <input type="radio" id="mujer" name="genero" value="mujer">
-            <label for="mujer">Mujer</label>
-            <input type="radio" id="otro" name="genero" value="otro">
-            <label for="otro">Otro</label>
-            
-            <label>Intereses:</label>
-            <input type="checkbox" id="deportes" name="intereses" value="deportes">
-            <label for="deportes">Deportes</label>
-            <input type="checkbox" id="musica" name="intereses" value="musica">
-            <label for="musica">Música</label>
-            <input type="checkbox" id="lectura" name="intereses" value="lectura">
-            <label for="lectura">Lectura</label>
-        </fieldset>
-        
-        <!-- Áreas de texto y archivos -->
-        <fieldset>
-            <legend>Más información</legend>
-            
-            <label for="comentarios">Comentarios:</label>
-            <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe tus comentarios aquí"></textarea>
-            
-            <label for="archivo">Subir archivo:</label>
-            <input type="file" id="archivo" name="archivo" accept=".pdf,.jpg,.png">
-            
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" id="contraseña" name="contraseña" minlength="8">
-        </fieldset>
-        
-        <!-- Elementos interactivos -->
-        <fieldset>
-            <legend>Acciones</legend>
-            
-            <input type="submit" value="Enviar formulario">
-            <input type="reset" value="Limpiar formulario">
-            <input type="button" value="Botón normal" onclick="alert('Hola!')">
-            
-            <button type="submit">Enviar (button)</button>
-            <button type="reset">Resetear</button>
-            <button type="button" disabled>Botón deshabilitado</button>
-            
-            <label for="progreso">Progreso:</label>
-            <progress id="progreso" value="70" max="100">70%</progress>
-            
-            <label for="volumen">Volumen:</label>
-            <meter id="volumen" value="6" min="0" max="10">6 de 10</meter>
-        </fieldset>
-        
-        <!-- Elementos HTML5 adicionales para formularios -->
-        <fieldset>
-            <legend>Elementos avanzados</legend>
-            
-            <label for="lista">Lista de sugerencias:</label>
-            <input list="sugerencias" id="lista" name="lista">
-            <datalist id="sugerencias">
-                <option value="Opción 1">
-                <option value="Opción 2">
-                <option value="Opción 3">
-            </datalist>
-            
-            <output name="resultado" for="rango">5</output>
-        </fieldset>
-    </form>
+
+    <script src="
+https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js
+"></script>
 </body>
 </html>
